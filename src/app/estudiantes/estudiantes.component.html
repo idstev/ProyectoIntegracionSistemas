@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Lista de Notas</h2>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Asignatura</th>
+            <th>Nota</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let estudiante of estudiantes">
+            <td>{{ estudiante.nombre }}</td>
+            <td>{{ estudiante.asignatura }}</td>
+            <td>{{ estudiante.nota }}</td>
+            <td><button (click)="eliminarEstudiante(estudiante.id)">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <button class="btn btn-secondary mt-3" routerLink="/formulario">Regresar al Formulario</button>
+  </div>
+  

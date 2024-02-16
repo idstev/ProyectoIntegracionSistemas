@@ -1,0 +1,21 @@
+<div>
+    <h1>MOODLE</h1>
+</div>
+<div class="container">
+    <h2 class="mt-4">Agregar Notas</h2>
+
+    <form [formGroup]="estudianteForm" (ngSubmit)="onSubmit()" class="estudiante-form">
+    <div class="form-group">
+        <input type="text" formControlName="nombre" placeholder="Nombre del Estudiante" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" formControlName="asignatura" placeholder="Asignatura" class="form-control">
+    </div>
+    <div class="form-group">
+        <input type="text" formControlName="nota" placeholder="Nota" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar Nota</button>
+    </form>
+
+    <button class="btn btn-secondary mt-3" routerLink="/estudiantes">Ver Lista de Estudiantes</button>
+</div>
