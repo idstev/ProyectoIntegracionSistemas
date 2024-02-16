@@ -21,7 +21,7 @@ export class FormularioComponent {
     if (this.estudianteForm.valid) {
       const formData = this.estudianteForm.value;
 
-      // Utilizamos el operador de fusión de nulos (??) para proporcionar valores predeterminados si las propiedades son null o undefined
+      
       const estudiante: Estudiante = {
         nombre: formData.nombre ?? '',
         asignatura: formData.asignatura ?? '',
